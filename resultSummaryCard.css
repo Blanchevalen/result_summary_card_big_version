@@ -1,0 +1,213 @@
+:root{
+    --clr-neutral-pale-blue: hsl(221, 100%, 96%);
+    --clr-neutral-light-levander:hsl(241, 100%, 89%);
+    --clr-neutral-dark-gray-blue: hsl(224, 30%, 27%);
+    --clr-neutral-white:hsl(0,0%,100%);
+    --clr-neutral-green:#f2fbfa;
+    --clr-neutral-yellow:#fffbf2;
+    --clr-neutral-rose:#fff6f5;
+    --clr-neutral-purple:#f3f3fd;
+  
+
+    --clr-circle-violet-blue:hsla(256, 72%, 46%, 1);
+    --clr-circle-persian-blue: hsla(241, 72%, 46%, 0);
+
+    --clr-primary-light-red:hsl(0,100%,67%);
+    --clr-primary-orangey-yelloow:hsl(39,100%,56%);
+    --clr-primary-green-teal:hsl(166,100%,37%);
+    --clr-primary-cobalt-blue:hsl(234,85%,45%);
+
+}
+html{
+    max-width: 1440px;
+}
+body{
+    display: grid;
+    place-content: center;
+    max-width: 90rem;
+    background-color: white;
+}
+
+
+main{display: grid;
+
+    grid-template-columns:50% 50%;
+    grid-row:inherit;
+    grid-template-areas: "result summary";  
+max-width: 1440px;
+border-radius: 2.2rem;
+box-shadow: 1.6em 1.6em 1.6em rgb(196, 195, 195);
+font-size: 1.9em; /*18 px= 1.125 em, but is looks to me too small*/
+
+font-family: 'Hanken Grotesk', sans-serif;}
+
+#yourResult{
+ 
+    box-sizing: content-box;
+    grid-area:result;
+    border-radius:2.2rem;
+    background: linear-gradient(#6541f9,#2e2bec);
+    display: grid;
+    overflow: hidden;
+    justify-items: center;
+    padding: 1.5rem 5.3rem 1.5rem 5.3rem;
+    height: auto;
+    column-gap:5rem;
+
+}
+#yourResult h1,p{
+    color:var(--clr-neutral-light-levander);
+
+}
+#yourResult h2,#resultPoint{
+    color:var(--clr-neutral-pale-blue);
+
+}#resultPoint{
+font-size:5.5em;
+font-weight:800;
+margin:0;
+padding:0em 0.3em 0em 0.3em;
+}
+#yourResult p{
+    margin:0;
+    padding:0em 0.3em 0em 0.3em;
+    display: grid;
+    justify-items:center;
+}
+#resultPointBox{
+    border-radius: 100%;
+    background: linear-gradient(var(--clr-circle-violet-blue),var(--clr-circle-persian-blue));
+    padding: 2.3em;
+    display: grid;
+    place-content: center;
+}
+#yourResult h2{
+    font-size:1.8em;
+    padding-top:1.3em;
+    margin:0;
+}
+#description{
+
+    box-sizing: border-box;
+    margin:4em;
+    padding: 2em;
+    text-align: center;
+    font-size:1.26em;
+}
+
+
+#summary{
+   
+    display: grid;
+    grid-area:summary;
+    box-sizing: border-box;
+
+    padding: 1.5rem 5.3rem 1.5rem 5.3rem;
+    row-gap: 1.5rem;
+    column-gap: 5rem;
+    font-weight: 800;
+   
+}
+.results{
+    display: flex;
+    justify-content:space-between;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    box-sizing: border-box;
+    
+}
+#summary h2{
+    font-size:1.5em;
+    color:var(--clr-neutral-dark-gray-blue);
+ 
+}
+#reaction{
+    background-color: var(--clr-neutral-rose);
+    box-sizing: border-box;
+}
+#reaction p{
+    color:var(--clr-primary-light-red);
+    
+}
+#memory{
+    background-color: var(--clr-neutral-yellow);
+
+}
+#memory p{
+    color:var(--clr-primary-orangey-yelloow)
+}
+#verbal{
+    background-color: var(--clr-neutral-green);
+}
+#verbal p{
+    color:var(--clr-primary-green-teal)
+}
+#visual{
+    background-color: var(--clr-neutral-purple);
+    
+}
+#visual p{
+    color:var(--clr-primary-cobalt-blue);
+}
+.maxPoint{
+    color:Var(--clr-neutral-light-levander);
+}
+.personalPoint{
+    color:var(--clr-circle-persian-blue);
+}
+#vPoint p{
+    color:var(--clr-circle-persian-blue);
+}
+#verbal .personalPoint {
+    color: var(--clr-neutral-dark-gray-blue);
+}
+#visual .vPoint {
+    color: var(--clr-neutral-dark-gray-blue);
+}
+#reaction .personalPoint {
+    color:var(--clr-neutral-dark-gray-blue);
+}
+#memory .personalPoint{
+    color:var(--clr-neutral-dark-gray-blue);
+}
+#visual .personalPoint{
+    color:var(--clr-neutral-dark-gray-blue);
+}
+button{
+    background-color: var(--clr-neutral-dark-gray-blue);
+    color:var(--clr-neutral-pale-blue);
+    border-radius: 3rem;
+    max-height: 5rem;
+    font-size:1.9rem;
+    padding:3rem;
+    display: grid;
+    place-content: center;
+    margin-top:3rem;
+    font-weight: 700;
+}
+.attribution{
+    visibility: hidden;
+}
+img{
+    width: 2.6rem;
+    padding-right: 1em;
+}
+.icon{
+    display:flex;
+
+}
+button:active, :focus, :hover{
+    background-color:linear-gradient(var(--clr-circle-violet-blue),var(--clr-circle-persian-blue));
+}
+@media (max-width:1000px) 
+{
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: auto;
+        grid-template-areas: "result"
+         "summary";
+      
+    }
+    
+}
