@@ -11,5 +11,5 @@ fetch(jsonURL)
         const scoreValue = data[0].score;
 
         // A score értékének megjelenítése az HTML elemen
-        scoreElement.textContent = ` ${scoreValue}`;
+        scoreElement.textContent = ` ${scoreValue} /100`;
     });
