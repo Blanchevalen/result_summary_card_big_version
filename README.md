@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here]([https://your-solution-url.com](https://github.com/Blanchevalen/result_summary_card_big_version.git))
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://blanchevalen.github.io/result_summary_card_big_version/)
 
 ## My process
 
@@ -39,20 +39,22 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Media query for mobil view**
+- Media query for mobil view
+- Fetch API**
 
 ### What I learned
 
-**I learned that the size is count. My solution bigger then design, but i do not understand the reasons. I have to learn and learn...**
+**I learned that the size is count. My solution bigger then design, but i do not understand the reasons. I have to learn and learn...
+And is learned using bassically fetch API. That was a big step for me.**
 
 ### Continued development
 
-**I will develop a same project, for understand my previous mistake.**
+**I will develop a same project, for understand my previous mistake, and i want to continue learning JavaScript.**
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Blanchevalen](https://www.frontendmentor.io/Blanchevalen)
+
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
